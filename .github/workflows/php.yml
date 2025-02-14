@@ -21,7 +21,7 @@ jobs:
       - name: Configuration de PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.0'  # Spécifiez la version de PHP appropriée
+          php-version: '8.4.1'  # Spécifiez la version de PHP appropriée
 
       - name: Installation des dépendances
         run: composer install
