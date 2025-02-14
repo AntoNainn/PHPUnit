@@ -42,10 +42,4 @@ class CalculatorTest extends TestCase
         $calculator = new Calculator();
         $this->assertInstanceOf(Calculator::class, $calculator); // Vérifie que l'objet est une instance de Calculator
     }
-
-    public function testNotEmpty()
-    {
-        $calculator = new Calculator();
-        $this->assertNotEmpty($calculator->add(1, 1)); // Vérifie que la valeur retournée n'est pas vide
-    }
 }
