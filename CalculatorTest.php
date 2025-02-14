@@ -15,7 +15,7 @@ class CalculatorTest extends TestCase
     public function testSubtraction()
     {
         $calculator = new Calculator();
-        $this->assertSame(1, $calculator->subtract(3, 3)); // Vérifie si le résultat est strictement 1 (même type et valeur)
+        $this->assertSame(1, $calculator->subtract(3, 2)); // Vérifie si le résultat est strictement 1 (même type et valeur)
     }
 
     public function testMultiplication()
