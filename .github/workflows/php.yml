@@ -26,6 +26,9 @@ jobs:
       - name: Installation des dépendances
         run: composer install
 
+      - name: Donner les permissions d'exécution à phpunit
+        run: chmod +x vendor/bin/phpunit
+
       - name: Exécution des tests PHPUnit
         run: vendor/bin/phpunit CalculatorTest.php
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
