@@ -23,6 +23,9 @@ jobs:
         with:
           php-version: '8.0'  # Spécifiez la version de PHP appropriée
 
+      - name: Installation des dépendances
+        run: composer install
+
       - name: Exécution des tests PHPUnit
         run: vendor/bin/phpunit CalculatorTest.php
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
